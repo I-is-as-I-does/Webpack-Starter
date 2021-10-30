@@ -7,18 +7,17 @@ mini read me
 When inside project folder:
 
 ```bash
-npm init -y
-npm install --save-dev webpack webpack-cli install-webpack-plugin css-loader mini-css-extract-plugin banner-plugin
+npm install
 ```
 
-`-y` skip guided `package.json` creation
+This starter dependencies listed in `package.json` will be installed.
 
 Edit `const license` in `webpack.config.js`
 Edit `name` and `license` in `package.json`
 
-## Dependencies
+## Package
 
-### Install package
+### Install
 
 > When installing a package that will be bundled into your production bundle, you should use `npm install --save`. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use `npm install --save-dev`.  
 
@@ -37,7 +36,7 @@ ex. :
 import _ from 'lodash';
 ```
 
-## Build
+### Build project
 
 ```bash
 npm run build
@@ -78,7 +77,7 @@ project-folder
 ### package.json
 
 ```json
- {
+{
   "name": "project-name",
   "version": "0.0.1",
   "private": true,
@@ -92,7 +91,10 @@ project-folder
   "description": "",
   "devDependencies": {
     "webpack": "^5.61.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "css-loader": "^6.5.0",
+    "mini-css-extract-plugin": "^2.4.3",
+    "banner-plugin": "^1.0.10"
   },
   "dependencies": {}
 }
@@ -136,6 +138,7 @@ module.exports = {
 example:
 
 ```javascript
+import "./style.css";
 import Something from 'somethingPackage';
 
 function component() {
@@ -149,7 +152,7 @@ function component() {
 
 ### dist/index.html
 
-Exemple of how to call compiled main.js and (optional) main.css in an html file
+Exemple of how to call compiled main.js and main.css in an html file
 
 ```html
 <!DOCTYPE html>
@@ -174,4 +177,14 @@ look into `HtmlWebpackPlugin`
 
 ## More
 
+- Getting started
 <https://webpack.js.org/guides/getting-started/>
+
+- Css plugin options
+<https://webpack.js.org/plugins/mini-css-extract-plugin/>
+
+- Banner plugin options
+<https://webpack.js.org/plugins/banner-plugin/>
+  
+- Other useful plugins
+<https://webpack.js.org/plugins/>

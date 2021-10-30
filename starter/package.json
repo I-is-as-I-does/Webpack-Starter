@@ -13,7 +13,9 @@
   "devDependencies": {
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1",
-    "install-webpack-plugin":"", "css-loader":"^6.5.0", "mini-css-extract-plugin":"^2.4.3", "banner-plugin":"^1.0.10":
+    "css-loader": "^6.5.0",
+    "mini-css-extract-plugin": "^2.4.3",
+    "banner-plugin": "^1.0.10"
   },
   "dependencies": {}
 }
