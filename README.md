@@ -1,4 +1,6 @@
-# Webpack starter mini Read me
+# Webpack Starter
+
+mini read me
 
 ## Init
 
