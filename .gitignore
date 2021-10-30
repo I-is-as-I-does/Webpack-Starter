@@ -1,0 +1,12 @@
+﻿*.code-workspace
+.env
+*.env
+env/*
+composer.lock
+vendor/*
+.vscode/*
+.fridge/*
+node_modules/*
+.autogit/*
+.git/*
+package-lock.json
