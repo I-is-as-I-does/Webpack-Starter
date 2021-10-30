@@ -8,11 +8,7 @@ When inside project folder:
 
 ```bash
 npm init -y
-npm install --save-dev webpack webpack-cli 
-npm install --save-dev install-webpack-plugin
-npm install --save-dev css-loader
-npm install --save-dev mini-css-extract-plugin
-npm install --save-dev banner-plugin
+npm install --save-dev webpack webpack-cli install-webpack-plugin css-loader mini-css-extract-plugin banner-plugin
 ```
 
 `-y` skip guided `package.json` creation
