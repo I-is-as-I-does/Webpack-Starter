@@ -4,20 +4,20 @@ mini read me
 
 ## Init
 
-When in project folder:
+When inside project folder:
 
 ```bash
 npm init -y
 npm install webpack webpack-cli --save-dev
 ```
 
--y skip guided package.json creation
+`-y` skip guided `package.json` creation
 
 ## Dependencies
 
 ### Install package
 
-When installing a package that will be bundled into your production bundle, you should use npm install --save. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use npm install --save-dev.  
+> When installing a package that will be bundled into your production bundle, you should use `npm install --save`. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use `npm install --save-dev`.  
 
 ex. :
 
@@ -27,7 +27,7 @@ npm install --save lodash
 
 ### Import
 
-Import dependency using JS import in src/ file(s)
+Import dependency using JS import in `src/` file(s)
 ex. :
 
 ```javascript
@@ -52,7 +52,7 @@ or
 npx webpack --config webpack.custom-name.config.js
 ```
 
-Results are in dist/
+Compiled .js file to be found in `dist/`.
 
 ## Files
 
